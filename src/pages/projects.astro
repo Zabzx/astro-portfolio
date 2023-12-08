@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import '@fontsource/dela-gothic-one';
+import "@fontsource-variable/raleway";
+import SpiceUp from "../../public/img/spiceup.png";
+import MiniMedia from "../../public/img/minimedia.png";
+---
+
+<Layout>
+    <section class="bg-mainBg bg-center bg-cover h-screen">
+        <div class="container px-5 sm:px-16">
+        <h1 class="text-white text-5xl sm:text-6xl pt-6">Projects</h1>
+        <p class="font-raleway text-white font-3xl mt-7">Recent projects I've worked on.</p>
+
+        <div class="flex gap-10 flex-col sm:flex-row justify-between mt-2">
+            <a href="/spiceup">
+            <div class="project sm:mt-40">
+                <img class="w-project" src={SpiceUp.src} alt="" transition:name="spiceup">
+                <div class="relative before:content-['SpiceUp!'] before:text-2xl before:bg-fadedBlack before:bottom-0 before:left-0 before:p-5 before:text-white before:rounded-bl-xl before:rounded-tr-xl before:absolute"></div>
+            </div>
+            </a>
+
+            <a href="/minimedia">
+            <div class="project">
+                <img class="w-project" src={MiniMedia.src} alt="" transition:name="minimedia">
+                <div class="relative before:content-['MiniMedia'] before:text-2xl before:bg-fadedBlack before:bottom-0 before:left-0 before:p-5 before:text-white before:rounded-bl-xl before:rounded-tr-xl before:absolute"></div>
+            </div>
+            </a>
+        </div>
+        </div>
+    </section>
+</Layout>
