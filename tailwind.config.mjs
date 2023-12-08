@@ -14,7 +14,7 @@ export default {
 				miniMediaPink: "#FF6884"
 			},
 			backgroundImage: {
-				mainBg: "url(./public/img/bg.jpg)",
+				mainBg: "url(/img/bg.jpg)",
 			},
 			fontFamily: {
 				sans: ["Dela Gothic One", ...defaultTheme.fontFamily.sans],
